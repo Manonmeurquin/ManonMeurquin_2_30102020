@@ -1,0 +1,15 @@
+
+/* Header */
+
+@font-face {
+    font-family: "Raleway-Regular";
+    src: url('Fonts/Raleway/Raleway-Regular.ttf') format("ttf"),
+   }
+
+body{
+    font-family: 'Raleway-Regular';
+    background-color: #F2F2F2;
+}
+ul{
+    list-style-type: none;
+}
