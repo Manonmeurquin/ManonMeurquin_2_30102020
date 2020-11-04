@@ -1,15 +1,655 @@
 
-/* Header */
-
 @font-face {
     font-family: "Raleway-Regular";
+    src: url(fonts/Raleway/Raleway-Regular.ttf);
     src: url('Fonts/Raleway/Raleway-Regular.ttf') format("ttf"),
    }
 
-body{
-    font-family: 'Raleway-Regular';
-    background-color: #F2F2F2;
+@font-face{
+    font-family: "Raleway-SemiBold";
+    src: url(fonts/Raleway/Raleway-SemiBold.ttf);
+    src: url('fonts/Raleway/Raleway-SemiBold.ttf') format("ttf"),
 }
+
+body{
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+/* Header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2em;
+}
+
+.logo{
+    margin-right: 450px;
+    text-align: start;
+}
+
+.lien{
+    justify-content: space-around;
+    margin-right: 20px;
+    padding-top: 1em;
+    color: #0065fc;
+}
+.lien:hover{
+    border-top: 2px solid #0065fc;
+}
+
+.sinscrire{
+    font-family: 'Raleway-SemiBold';
+    padding-top: 1em;
+    color: #0065fc;
+}
+.sinscrire:hover{
+    border-top: 2px solid #0065fc;
+}
+
+/*Section 1*/
+
+.formrecherche{
+   display: flex;
+   align-items: center;
+}
+
+.text{
+    margin: 0;
+}
+
+.trouvez{
+    margin-bottom: 0.4em;
+}
+
+.filtres{
+    display: flex;
+}
+
+.eco{
+    display: flex;
+    margin-left: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-map-marker-alt{
+    background-color: #F2F2F2;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 15px;
+    height: 15px;
+}
+
+.bouton{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #0065fc;
+    color: white;
+    padding: 8px;
+    border: none;
+}
+
+.formulaire{
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    border-right: none;
+    border-left: none;
+}
+
+.fa-money-bill-wave{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: #0065fc;
+    border-radius: 50%;
+    border: 1px solid #deebff;
+    background-color: #deebff;
+    padding: 10px;
+}
+
+.fa-child{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: #0065fc;
+    border-radius: 50%;
+    border: 1px solid #deebff;
+    background-color: #deebff;
+    padding: 10px;
+}
+
+.fa-heart{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: #0065fc;
+    border-radius: 50%;
+    border: 1px solid #deebff;
+    background-color: #deebff;
+    padding: 10px;
+}
+
+.fa-dog{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: #0065fc;
+    border-radius: 50%;
+    border: 1px solid #deebff;
+    background-color: #deebff;
+    padding: 10px;
+}
+
+.fa-info{
+    text-align: center;
+    width: 2em;
+    height: 2em;
+    color: #0065fc;
+    border-radius: 50%;
+    border: 1px #deebff solid;
+    
+}
+
+span{
+    border: #F2F2F2 solid 2px;
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+    border-left: none;
+    margin-left: 0;
+    margin-right: 1em;
+    padding-right: 1em;
+    font-family: 'Raleway-SemiBold';
+}
+
+i{
+    display: inline-block;
+}
+/*aside hebergements*/
+
+.hebergements{
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    background-color: #F2F2F2;
+    margin-right: 2em;
+    width: 52em;
+    height: 40em;
+
+}
+.ancre_hebergement{
+    
+}
+
+.hebergements_populaires{
+    display: flex;
+    
+}
+
+.cannebiere{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 6px 6px 6px #dfdcdc;
+    width: 15em;
+    height: 13em;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 15px;
+    margin-bottom: 30px; 
+}
+.cannebiere:hover{
+    box-shadow: 6px 6px 6px #7c7b7b;
+}
+.chambrecannebiere{
+    width: 14.5em;
+    height: 7em;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px ;
+    
+}
+
+.textcannebiere{ 
+    width: 15em;
+    height: 8em;
+    font-size: 0.8em;
+}
+
+.hotelport{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 6px 6px 6px #dfdcdc;
+    width: 15em;
+    height: 13em;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 15px;
+    margin-bottom: 30px; 
+}
+.hotelport:hover{
+    box-shadow: 6px 6px 6px #7c7b7b;
+}
+
+.chambrehotelport{
+    width: 14.5em;
+    height: 7em;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px ;
+
+}
+
+.texthotelport{
+    width: 15em;
+    height: 8em;
+    font-size: 0.8em;
+}
+
+.hotelmouettes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 6px 6px 6px #dfdcdc;
+    width: 15em;
+    height: 13em;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 15px;
+    margin-bottom: 30px; ;
+}
+
+.hotelmouettes:hover{
+    box-shadow: 6px 6px 6px #7c7b7b;
+}
+.chambrehotelmouettes{
+    width: 14.5em;
+    height: 7em;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px ;
+}
+
+.texthotelmouettes{
+    width: 15em;
+    height: 8em;
+    font-size: 0.8em;
+}
+
+.hotelmer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 6px 6px 6px #dfdcdc;
+    width: 15em;
+    height: 13em;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 15px;
+    margin-bottom: 30px; 
+}
+
+.hotelmer:hover{
+    box-shadow: 6px 6px 6px #7c7b7b;
+}
+
+.chambrehotelmer{
+    width: 14.5em;
+    height: 7em;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px ;
+}
+
+.texthotelmer{
+    width: 15em;
+    height: 8em;
+    font-size: 0.8em;
+}
+
+.panier{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 6px 6px 6px #dfdcdc;
+    width: 15em;
+    height: 13em;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 15px;
+    margin-bottom: 30px; 
+}
+
+.panier:hover{
+    box-shadow: 6px 6px 6px #7c7b7b;
+}
+
+.chambrepanier{
+    width: 14.5em;
+    height: 7em;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px ;
+}
+
+.textpanier{
+    width: 15em;
+    height: 8em;
+    font-size: 0.8em;
+}
+
+.hotelamina{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 6px 6px 6px #dfdcdc;
+    width: 15em;
+    height: 13em;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 15px;
+    margin-bottom: 30px; 
+}
+
+.hotelamina:hover{
+    box-shadow: 6px 6px 6px #7c7b7b;
+}
+
+.chambreamina{
+    width: 14.5em;
+    height: 7em;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px ;
+}
+
+.textamina{
+    width: 15em;
+    height: 8em;
+    font-size: 0.8em;
+}
+
+.premiereligne{
+    position: relative;
+    display: flex;
+
+}
+
+.deuxiemeligne{
+    position: relative;
+    display: flex;  
+}
+
+.afficher{
+    color: black;
+    margin-left: 20px;
+}
+.afficher:hover{
+    font-family: 'Raleway-SemiBold';
+}
+/*aside populaires*/
+
+.populaires{
+    display: flex;
+    background-color: #F2F2F2;
+    flex-direction: column;
+    width: 20em;
+    height: 40em;
+}
+
+.headpopulaire{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.soleil{
+    background-color: white;
+    box-shadow: 6px 6px 6px #dfdcdc;
+    width: 18em;
+    height: 15em;
+    border-radius: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.soleil:hover{
+    box-shadow: 6px 6px 6px #7c7b7b;
+}
+
+.chambresoleil{
+    width: 18em;
+    height: 8em;
+    margin-top: 1em;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px ;
+}
+
+.coeur{
+    background-color: white;
+    box-shadow: 6px 6px 6px #dfdcdc;
+    width: 18em;
+    height: 15em;
+    border-radius: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.coeur:hover{
+    box-shadow: 6px 6px 6px #7c7b7b;
+}
+
+.chambrecoeur{
+    width: 18em;
+    height: 8em;
+    margin-top: 1em;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px ;
+}
+
+.bleublanc{
+    background-color: white;
+    box-shadow: 6px 6px 6px #dfdcdc;
+    width: 18em;
+    height: 15em;
+    border-radius: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.bleublanc:hover{
+    box-shadow: 6px 6px 6px #7c7b7b;
+}
+
+.chambrebleublanc{
+    width: 18em;
+    height: 8em;
+    margin-top: 1em;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px ;
+}
+
+/* aside activités*/
+
+.activites{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    border: red solid 0.2em;
+    justify-content: space-between;
+    height: 25em;
+    margin-bottom: 3em;
+}
+
+.imgport{
+    border-top-left-radius:20px ;
+    border-top-right-radius: 20px;
+    width: 17em;
+    height: 22em;
+}
+
+.vieuxport{
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 6px 6px 6px #F2F2F2;
+    width: 17em;
+    height: 25em;
+    margin: 0;
+}
+
+.vieuxport:hover{
+    box-shadow: 6px 6px 6px #7c7b7b;
+}
+
+.imgfort{
+    border-top-left-radius:20px ;
+    border-top-right-radius: 20px;
+    height: 10em;
+    width: 17em;
+    height: 10em;
+}
+
+.fort{
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 6px 6px 6px #F2F2F2;
+    width: 17em;
+    height: 13em;
+
+}
+
+.fort:hover{
+    box-shadow: 6px 6px 6px #7c7b7b;
+}
+
+.imgiles{
+    border-top-left-radius:20px ;
+    border-top-right-radius: 20px;
+    width: 17em;
+    height: 7em;
+}
+
+.iles{
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 6px 6px 6px #F2F2F2;
+    width: 17em;
+    height: 10em;
+    
+}
+
+.iles:hover{
+    box-shadow: 6px 6px 6px #7c7b7b;
+}
+
+.imgcalanques{
+    border-top-left-radius:20px ;
+    border-top-right-radius: 20px;
+    width: 17em;
+    height: 22em;
+    margin: 0;
+}
+
+.calanques{
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 6px 6px 6px #F2F2F2;
+    width: 17em;
+    height: 25em;
+
+}
+
+.calanques:hover{
+    box-shadow: 6px 6px 6px #7c7b7b;
+}
+
+.imgnotredame{
+    border-top-left-radius:20px ;
+    border-top-right-radius: 20px;
+    width: 17em;
+}
+
+.notredame{
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 6px 6px 6px #F2F2F2;
+    width: 17em;
+    height: 13em;
+}
+
+.notredame:hover{
+    box-shadow: 6px 6px 6px #7c7b7b;
+}
+
+.imglongchamp{
+    border-top-left-radius:20px ;
+    border-top-right-radius: 20px;
+    width: 17em;
+}
+
+.longchamp{
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 6px 6px 6px #F2F2F2;
+    width: 17em;
+    height: 13em;
+}
+
+.longchamp:hover{
+    box-shadow: 6px 6px 6px #7c7b7b;
+}
+
+/* Général */
+
+p{
+    font-family: 'Raleway-Regular';
+    margin: 0;
+
+}
+
 ul{
     list-style-type: none;
+}
+
+a {
+    color:black;
+    text-decoration: none;
+    font-family: 'Raleway-Regular';
+}
+
+h2{
+    font-family: 'Raleway-SemiBold';
+    
+}
+h3{
+    font-family: 'Raleway-SemiBold';
+
+}
+
+h4{
+    font-family: 'Raleway-SemiBold';
+}
+
+strong{
+    font-family: 'Raleway-SemiBold';
+}
+
+.fa-star{
+    color: #0065fc;
+}
+
+/*Footer*/
+
+footer{
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Raleway-Regular';
+    padding-right: 23em;
+    border-radius: 20px;
+
 }
