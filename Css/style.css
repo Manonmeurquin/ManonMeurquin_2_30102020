@@ -12,10 +12,9 @@
 }
 
 body{
-    padding-left: 3em;
-    padding-right: 3em;
+    margin-left: 2em;
+    margin-right: 2em;
 }
-
 /* Header */
 
 header{
@@ -27,6 +26,7 @@ header{
 .logo{
     margin-right: 450px;
     text-align: start;
+    width: 10%;
 }
 
 .lien{
@@ -35,7 +35,7 @@ header{
     padding-top: 1em;
     color: #0065fc;
 }
-.lien:hover{
+.lien:hover, .sinscrire:hover{
     border-top: 2px solid #0065fc;
 }
 
@@ -44,43 +44,69 @@ header{
     padding-top: 1em;
     color: #0065fc;
 }
-.sinscrire:hover{
-    border-top: 2px solid #0065fc;
-}
 
 /*Section 1*/
 
-.formrecherche{
+.formrecherche, .filtres{
    display: flex;
    align-items: center;
+   margin-bottom: 1em;
 }
 
 .text{
-    margin: 0;
+    margin-top: 0;;
+    margin-bottom: 1em;
 }
 
 .trouvez{
     margin-bottom: 0.4em;
+    font-family: 'Raleway-SemiBold';
+    font-size: 2em;
 }
 
-.filtres{
-    display: flex;
+.fa-info{
+    text-align: center;
+    width: 0.5em;
+    height: 0.5em;
+    color: #0065fc;
+    border-radius: 50%;
+    border: 1px #deebff solid;
+    padding-top: 0.5em;
+    padding-right: 0.7em;
+    padding-left: 0.7em;
+    padding-bottom: 1em ;
+    font-size: 12px;
+    margin-right: 1em;
 }
-
-.eco{
+.motfiltre{
+    font-family: 'Raleway-SemiBold';
+    font-size: 1.4em;
+}
+.boutonfiltres{
     display: flex;
     margin-left: 1em;
     justify-content: center;
     align-items: center;
 }
 
+.boutonfiltres:hover{
+    box-shadow: 6px 6px 6px #7c7b7b;
+    border-radius: 2em;
+    border-left: none;
+    font-style: oblique;
+    
+}
+
 .fa-map-marker-alt{
-    background-color: #F2F2F2;
-    padding: 10px;
+    background-color: #F2F2F2;  
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     width: 15px;
     height: 15px;
+    padding: 0.8em;
+    padding-top: 0.50em;
+    padding-bottom: 0.65em;
+
 }
 
 .bouton{
@@ -90,6 +116,12 @@ header{
     color: white;
     padding: 8px;
     border: none;
+    height: 34px;
+    margin-left: none;
+}
+
+.bouton:hover{
+    box-shadow: 4px 4px 4px #a5a4a4;
 }
 
 .formulaire{
@@ -97,9 +129,10 @@ header{
     border-bottom: 1px solid #F2F2F2;
     border-right: none;
     border-left: none;
+    margin-right: none;
 }
 
-.fa-money-bill-wave{
+.fa-money-bill-wave, .fa-dog{
     width: 20px;
     height: 20px;
     text-align: center;
@@ -108,22 +141,11 @@ header{
     border: 1px solid #deebff;
     background-color: #deebff;
     padding: 10px;
-}
-
-.fa-child{
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    color: #0065fc;
-    border-radius: 50%;
-    border: 1px solid #deebff;
-    background-color: #deebff;
-    padding: 10px;
+    padding-top: 12px;
+    padding-bottom: 8px;
 }
 
 .fa-heart{
-    width: 20px;
-    height: 20px;
     text-align: center;
     color: #0065fc;
     border-radius: 50%;
@@ -131,37 +153,24 @@ header{
     background-color: #deebff;
     padding: 10px;
 }
-
-.fa-dog{
-    width: 20px;
-    height: 20px;
+.fa-child{
     text-align: center;
     color: #0065fc;
     border-radius: 50%;
     border: 1px solid #deebff;
     background-color: #deebff;
     padding: 10px;
-}
-
-.fa-info{
-    text-align: center;
-    width: 2em;
-    height: 2em;
-    color: #0065fc;
-    border-radius: 50%;
-    border: 1px #deebff solid;
-    
+    padding-right: 12px;
+    padding-left: 12px;
 }
 
 span{
     border: #F2F2F2 solid 2px;
-    border-top-right-radius: 2em;
-    border-bottom-right-radius: 2em;
+    border-radius: 2em;
     border-left: none;
-    margin-left: 0;
-    margin-right: 1em;
     padding-right: 1em;
     font-family: 'Raleway-SemiBold';
+    font-size: 1.5em;
 }
 
 i{
@@ -175,64 +184,57 @@ i{
     align-items: space-around;
     background-color: #F2F2F2;
     margin-right: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1.2em;
     width: 52em;
     height: 40em;
-
+    border-radius: 20px;
 }
-.ancre_hebergement{
-    
+
+#ancre_hebergements{
+    font-family: 'Raleway-SemiBold';
+    margin-top: 1em;
+    margin-bottom: 1.5em;
 }
 
 .hebergements_populaires{
     display: flex;
-    
+    justify-content: space-around;
+    width: auto;
 }
 
-.cannebiere{
+.premiereligne, .deuxiemeligne{
+    display: flex;
+    justify-content: space-between;
+}
+
+.textcannebiere, .texthotelport, .texthotelmouettes, .texthotelmer, .textpanier, .textamina{ 
+    width: 15em;
+    height: 8em;
+    font-size: 0.8em;
+    font-family: 'Raleway-SemiBold';
+}
+
+.cannebiere, .hotelport, .hotelmouettes{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     background-color: white;
     box-shadow: 6px 6px 6px #dfdcdc;
     width: 15em;
     height: 13em;
     border-radius: 20px;
-    margin-left: 10px;
-    margin-right: 15px;
     margin-bottom: 30px; 
+    padding-top: 4px;
 }
-.cannebiere:hover{
-    box-shadow: 6px 6px 6px #7c7b7b;
-}
+
 .chambrecannebiere{
     width: 14.5em;
     height: 7em;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px ;
-    
-}
-
-.textcannebiere{ 
-    width: 15em;
-    height: 8em;
-    font-size: 0.8em;
-}
-
-.hotelport{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-    box-shadow: 6px 6px 6px #dfdcdc;
-    width: 15em;
-    height: 13em;
-    border-radius: 20px;
-    margin-left: 10px;
-    margin-right: 15px;
-    margin-bottom: 30px; 
-}
-.hotelport:hover{
-    box-shadow: 6px 6px 6px #7c7b7b;
 }
 
 .chambrehotelport{
@@ -240,43 +242,13 @@ i{
     height: 7em;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px ;
-
 }
 
-.texthotelport{
-    width: 15em;
-    height: 8em;
-    font-size: 0.8em;
-}
-
-.hotelmouettes{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-    box-shadow: 6px 6px 6px #dfdcdc;
-    width: 15em;
-    height: 13em;
-    border-radius: 20px;
-    margin-left: 10px;
-    margin-right: 15px;
-    margin-bottom: 30px; ;
-}
-
-.hotelmouettes:hover{
-    box-shadow: 6px 6px 6px #7c7b7b;
-}
 .chambrehotelmouettes{
     width: 14.5em;
     height: 7em;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px ;
-}
-
-.texthotelmouettes{
-    width: 15em;
-    height: 8em;
-    font-size: 0.8em;
 }
 
 .hotelmer{
@@ -288,13 +260,9 @@ i{
     width: 15em;
     height: 13em;
     border-radius: 20px;
-    margin-left: 10px;
     margin-right: 15px;
-    margin-bottom: 30px; 
-}
-
-.hotelmer:hover{
-    box-shadow: 6px 6px 6px #7c7b7b;
+    margin-bottom: 30px;
+    padding-top: 4px;
 }
 
 .chambrehotelmer{
@@ -302,12 +270,6 @@ i{
     height: 7em;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px ;
-}
-
-.texthotelmer{
-    width: 15em;
-    height: 8em;
-    font-size: 0.8em;
 }
 
 .panier{
@@ -321,11 +283,8 @@ i{
     border-radius: 20px;
     margin-left: 10px;
     margin-right: 15px;
-    margin-bottom: 30px; 
-}
-
-.panier:hover{
-    box-shadow: 6px 6px 6px #7c7b7b;
+    margin-bottom: 30px;
+    padding-top: 4px;
 }
 
 .chambrepanier{
@@ -333,12 +292,6 @@ i{
     height: 7em;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px ;
-}
-
-.textpanier{
-    width: 15em;
-    height: 8em;
-    font-size: 0.8em;
 }
 
 .hotelamina{
@@ -351,12 +304,8 @@ i{
     height: 13em;
     border-radius: 20px;
     margin-left: 10px;
-    margin-right: 15px;
-    margin-bottom: 30px; 
-}
-
-.hotelamina:hover{
-    box-shadow: 6px 6px 6px #7c7b7b;
+    margin-bottom: 30px;
+    padding-top: 4px;
 }
 
 .chambreamina{
@@ -364,23 +313,6 @@ i{
     height: 7em;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px ;
-}
-
-.textamina{
-    width: 15em;
-    height: 8em;
-    font-size: 0.8em;
-}
-
-.premiereligne{
-    position: relative;
-    display: flex;
-
-}
-
-.deuxiemeligne{
-    position: relative;
-    display: flex;  
 }
 
 .afficher{
@@ -394,81 +326,79 @@ i{
 
 .populaires{
     display: flex;
-    background-color: #F2F2F2;
     flex-direction: column;
-    width: 20em;
-    height: 40em;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F2F2F2;
+    width: 26em;
+    border-radius: 20px;
+
+}
+.fa-chart-line{
+    font-size: 1.5em;
+    margin-left: 3.5em;
 }
 
 .headpopulaire{
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    font-family: 'Raleway-SemiBold';
 }
 
-.soleil{
+.soleil, .coeur, .bleublanc{
+    display: flex;
+    flex-direction: row;
     background-color: white;
     box-shadow: 6px 6px 6px #dfdcdc;
-    width: 18em;
-    height: 15em;
+    width: 22em;
+    height: 9em;
     border-radius: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding:4px;
+    
 }
-.soleil:hover{
-    box-shadow: 6px 6px 6px #7c7b7b;
+
+.titresoleil, .titrecoeur, .titrebleublanc{
+    font-size: 1em;
+    font-family: 'Raleway-SemiBold';
+    margin-right: 25px;
+    margin-bottom: 0;
+    margin-top: 10px;
 }
 
 .chambresoleil{
-    width: 18em;
-    height: 8em;
-    margin-top: 1em;
+    width: 8em;
+    height: 9em;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px ;
-}
-
-.coeur{
-    background-color: white;
-    box-shadow: 6px 6px 6px #dfdcdc;
-    width: 18em;
-    height: 15em;
-    border-radius: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-.coeur:hover{
-    box-shadow: 6px 6px 6px #7c7b7b;
 }
 
 .chambrecoeur{
-    width: 18em;
-    height: 8em;
-    margin-top: 1em;
+    width: 8em;
+    height: 9em;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px ;
-}
-
-.bleublanc{
-    background-color: white;
-    box-shadow: 6px 6px 6px #dfdcdc;
-    width: 18em;
-    height: 15em;
-    border-radius: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-.bleublanc:hover{
-    box-shadow: 6px 6px 6px #7c7b7b;
 }
 
 .chambrebleublanc{
-    width: 18em;
-    height: 8em;
-    margin-top: 1em;
+    width: 8em;
+    height: 9em;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px ;
+}
+
+.textpopulaire{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    padding-left: 20px;
+}
+
+.star{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
 }
 
 /* aside activités*/
@@ -477,10 +407,13 @@ i{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    border: red solid 0.2em;
     justify-content: space-between;
     height: 25em;
     margin-bottom: 3em;
+}
+
+#ancre_activites{
+    font-family: 'Raleway-SemiBold';
 }
 
 .imgport{
@@ -496,11 +429,8 @@ i{
     box-shadow: 6px 6px 6px #F2F2F2;
     width: 17em;
     height: 25em;
-    margin: 0;
-}
 
-.vieuxport:hover{
-    box-shadow: 6px 6px 6px #7c7b7b;
+
 }
 
 .imgfort{
@@ -520,10 +450,6 @@ i{
 
 }
 
-.fort:hover{
-    box-shadow: 6px 6px 6px #7c7b7b;
-}
-
 .imgiles{
     border-top-left-radius:20px ;
     border-top-right-radius: 20px;
@@ -540,10 +466,6 @@ i{
     
 }
 
-.iles:hover{
-    box-shadow: 6px 6px 6px #7c7b7b;
-}
-
 .imgcalanques{
     border-top-left-radius:20px ;
     border-top-right-radius: 20px;
@@ -553,7 +475,7 @@ i{
 }
 
 .calanques{
-    display: flex;
+    
     justify-content: flex-start;
     border-radius: 20px;
     background-color: white;
@@ -563,11 +485,7 @@ i{
 
 }
 
-.calanques:hover{
-    box-shadow: 6px 6px 6px #7c7b7b;
-}
-
-.imgnotredame{
+.imgnotredame, .imglongchamp{
     border-top-left-radius:20px ;
     border-top-right-radius: 20px;
     width: 17em;
@@ -578,17 +496,7 @@ i{
     background-color: white;
     box-shadow: 6px 6px 6px #F2F2F2;
     width: 17em;
-    height: 13em;
-}
-
-.notredame:hover{
-    box-shadow: 6px 6px 6px #7c7b7b;
-}
-
-.imglongchamp{
-    border-top-left-radius:20px ;
-    border-top-right-radius: 20px;
-    width: 17em;
+    height: 11em;
 }
 
 .longchamp{
@@ -596,18 +504,23 @@ i{
     background-color: white;
     box-shadow: 6px 6px 6px #F2F2F2;
     width: 17em;
-    height: 13em;
+    height: 11em;
 }
 
-.longchamp:hover{
+.box_activites{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Général */
+
+.cannebiere:hover, .hotelmouettes:hover, .vieuxport:hover, .fort:hover, .iles:hover, .calanques:hover, .notredame:hover, .longchamp:hover, .hotelamina:hover, .soleil:hover, .bleublanc:hover, .coeur:hover, .hotelport:hover, .panier:hover, .hotelmer:hover {
     box-shadow: 6px 6px 6px #7c7b7b;
 }
 
-/* Général */
-
 p{
     font-family: 'Raleway-Regular';
-    margin: 0;
 
 }
 
@@ -621,21 +534,18 @@ a {
     font-family: 'Raleway-Regular';
 }
 
-h2{
+.h4{
+    font-family: 'Raleway-SemiBold';
+}
+
+.strong{
     font-family: 'Raleway-SemiBold';
     
 }
-h3{
-    font-family: 'Raleway-SemiBold';
 
-}
+.h3{
+    margin-bottom: 0.5em;
 
-h4{
-    font-family: 'Raleway-SemiBold';
-}
-
-strong{
-    font-family: 'Raleway-SemiBold';
 }
 
 .fa-star{
@@ -653,3 +563,6 @@ footer{
     border-radius: 20px;
 
 }
+
+/* Media Queries*/
+
