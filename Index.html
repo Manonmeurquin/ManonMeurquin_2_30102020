@@ -11,18 +11,16 @@
 </head>
 
 <body>
-
-    <header>
+    <div class="bodymargin">
+        <header>
         <img class="logo" src="css/Images/logo/Reservia.svg" alt="logo reservia" />
-        <table class="tableauhead">
-            <tr>
-            <td><a class="lien" href="#ancre_hebergement">Hébergements</a></td>
-            <td><a class="lien" href="#ancre_activites">Activités</a></td>
-            <td><a class="sinscrire" href="adresseduformulairedinscription">S'inscrire</a></td>
-            </tr>
-        </table>
+        <div class="lignehead">
+            <a class="lien" href="#ancre_hebergement">Hébergements</a>
+            <a class="lien" href="#ancre_activites">Activités</a>
+            <a class="sinscrire" href="adresseduformulairedinscription">S'inscrire</a>
+        </div>
     </header>
-    
+
     <section>
         <h2 class="trouvez">Trouvez votre hébergement pour des vacances de rêve</h2>
         <p class="text">En plein centre ville ou en pleine nature</p>
@@ -33,6 +31,8 @@
             <p>
                 <input class= "formulaire" type="text" value="Marseille, France" style="height: 30px;"/>
                 <input class="bouton" type="submit" value="Rechercher"/>
+                <button class="boutonmobil"><i class="fas fa-search"></i></button><!--apparaît uniquement en version mobile -->
+        
             </p>
         </form>
         </div>
@@ -54,10 +54,10 @@
             <h2 id="ancre_hebergements">Hébergements à Marseille</h2>
        
         <div class="premiereligne">   
-            <a class="cannebiere" href="cannebiere.html">
-                    <img class="chambrecannebiere" src="css/Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+            <a class="boxhebergement" href="cannebiere.html">
+                    <img class="imghebergement" src="css/Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                         alt="chambre auberge de la cannebière" />
-                <div class="textcannebiere">
+                <div class="texthebergement">
                     <h3>Auberge de la Cannebière</h3>
                     <p>Nuit à partir de <strong>25€</strong> </p>
                     <i class="fas fa-star"></i>
@@ -69,10 +69,10 @@
                 </div>
             </a>
 
-            <div class="hotelport">
-                    <img class="chambrehotelport" src="css/Images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+            <div class="boxhebergement">
+                    <img class="imghebergement" src="css/Images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                         alt="chambre hôtel du port" />
-                <div class="texthotelport">
+                <div class="texthebergement">
                     <h3>Hôtel du port</h3>
                     <p>Nuit à partir de <strong>52€</strong> </p>
                     <i class="fas fa-star"></i>
@@ -84,10 +84,10 @@
                 </div>
             </div>
 
-            <a class="hotelmouettes" href="hotelmouettes.html">
-                    <img class="chambrehotelmouettes"src="css/Images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+            <a class="boxhebergement" href="hotelmouettes.html">
+                    <img class="imghebergement"src="css/Images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                         alt="chambre hôtel les mouettes" />
-                <div class="texthotelmouettes">
+                <div class="texthebergement">
                     <h3>Hôtel Les Mouettes</h3>
                     <p>Nuit à partir de <strong>76€</strong></p>
                     <i class="fas fa-star"></i>
@@ -100,10 +100,10 @@
             </a>
         </div> 
         <div class="deuxiemeligne">
-            <a class="hotelmer" href="hotelmer.html">
-                    <img class="chambrehotelmer"src="Css/Images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+            <a class="boxhebergement" href="hotelmer.html">
+                    <img class="imghebergement"src="Css/Images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                         alt="chambre hôtel de la mer" />
-                <div class="texthotelmer">
+                <div class="texthebergement">
                     <h3>Hôtel de la mer</h3>
                     <p>Nuit à partir de <strong>46€</strong></p>
                     <i class="fas fa-star"></i>
@@ -115,10 +115,10 @@
                 </div>
             </a>
 
-            <a class="panier" href="panier.html">
-                    <img class="chambrepanier"src="Css/Images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+            <a class="boxhebergement" href="panier.html">
+                    <img class="imghebergement"src="Css/Images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                         alt="chambre auberge le panier" />
-                <div class="textpanier">
+                <div class="texthebergement">
                     <h3>Auberge Le Panier</h3>
                     <p>Nuit à partir de <strong>23€</strong></p>
                     <i class="fas fa-star"></i>
@@ -130,10 +130,10 @@
                 </div>
             </a>
 
-            <a class="hotelamina" href="hotelamina.html">
-                    <img class="chambreamina" src="Css/Images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+            <a class="boxhebergement" href="hotelamina.html">
+                    <img class="imghebergement" src="Css/Images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                         alt="chambre hôtel chez amina" />
-                <div class="textamina">
+                <div class="texthebergement">
                     <h3>Hôtel chez Amina</h3>
                     <p>Nuit à partir de <strong>96€</strong></p>
                     <i class="fas fa-star"></i>
@@ -151,15 +151,15 @@
         <aside class="populaires">
 
             <div class="headpopulaire">
-            <h2>Les plus populaires</h2>
+            <h2 class="titrepopulaire">Les plus populaires</h2>
             <i class="fas fa-chart-line"></i><br />
             </div>
 
-            <a class="soleil" href="soleil.html">
-                    <img class="chambresoleil" src="css/Images/hebergements/redim/soleil_redim.jpg"
+            <a class="boxpopulaire" href="soleil.html">
+                    <img class="imgpopulaire" src="css/Images/hebergements/redim/soleil_redim.jpg"
                         alt="chambre hôtel le soleil du matin">
             <div class="textpopulaire"> 
-                        <h3 class="titresoleil">Hôtel Le soleil du matin</h3>
+                        <h3 class="titreboxpop">Hôtel Le soleil du matin</h3>
             <p>Nuit à partir de <strong>128€</strong></p>
             <div class="star">
                 <i class="fas fa-star"></i>
@@ -171,11 +171,11 @@
             </div>     
             </a>
 
-            <a class="coeur" href="coeur.html">
-                    <img class="chambrecoeur" src="css/Images/hebergements/redim/coeur_redim.jpg"
+            <a class="boxpopulaire" href="coeur.html">
+                    <img class="imgpopulaire" src="css/Images/hebergements/redim/coeur_redim.jpg"
                         alt="chambre d'hôte au coeur de l'eau">
             <div class="textpopulaire"> 
-                <h3 class="titrecoeur">Au coeur de l'eau <br />Chambre d'hôtes</h3>
+                <h3 class="titreboxpop">Au coeur de l'eau <br />Chambre d'hôtes</h3>
             <p>Nuit à partir de <strong>71€</strong></p>
                 <div class="star">
                 <i class="fas fa-star"></i>
@@ -187,11 +187,11 @@
             </div>   
             </a>
 
-            <a class="bleublanc" href="bleublanc.html">
-                    <img class="chambrebleublanc" src="css/Images/hebergements/redim/bleublanc_redim.jpg"
+            <a class="boxpopulaire" href="bleublanc.html">
+                    <img class="imgpopulaire" src="css/Images/hebergements/redim/bleublanc_redim.jpg"
                         alt="chambre hôtel tout bleu et blanc">
             <div class="textpopulaire"> 
-                <h3 class="titrebleublanc">Hôtel Tout bleu et blanc</h3>
+                <h3 class="titreboxpop">Hôtel Tout bleu et blanc</h3>
             <p>Nuit à partir de <strong>68€</strong></p>
             <div class="star">
                 <i class="fas fa-star"></i>
@@ -208,39 +208,39 @@
         <aside class="activites">
             <a class="vieuxport" href="vieuxport.html">
                 <img class="imgport" src="css/Images/activites/redim/vieux_port_redim.jpg" alt="vieux port"><br /> 
-                <p>Vieux Port</p>
+                <p class="text_activite">Vieux Port</p>
             </a>
 
         <div class="box_activites">
             <a class="fort" href="fort.html">
                 <img class="imgfort" src="css/Images/activites/redim/fort_pomegues_redim.jpg"alt="fort de pomègues"> <br />
-                <p>Fort de Pomègues</p>
+                <p class="text_activite">Fort de Pomègues</p>
             </a>
 
             <a class="iles" href="iles.html">
                 <img class="imgiles" src="css/Images/activites/redim/iles_frioul_redim.jpg" alt="îles de frioul"><br />
-                <p>Îles du Frioul</p>
+                <p class="text_activite">Îles du Frioul</p>
             </a>
          </div>
 
             <a class="calanques" href="calanques.html">
                 <img class="imgcalanques" src="Css/Images/activites/redim/calanques_redim.jpg"alt="parc national des calanques"> <br />
-                <p>Parc National des Calanques</p>
+                <p class="text_activite">Parc National des Calanques</p>
             </a>
 
         <div class="box_activites"> 
             <a class="notredame" href="notredame.html">
                 <img class="imgnotredame" src="Css/Images/activites/redim/notre_dame_redim.jpg" alt="notre-dame-de-la-garde"> <br />  
-                <p>Notre-Dame-de-la-Garde</p>
+                <p class="text_activite">Notre-Dame-de-la-Garde</p>
             </a>
 
             <a class="longchamp" href="longchamp.html">
                 <img class="imglongchamp" src="Css/Images/activites/redim/longchamp_redim.jpg" alt="parc longchamp"> <br />
-                <p>Parc Longchamp</p>
+                <p class="text_activite">Parc Longchamp</p>
             </a>
         </div>
         </aside>
-    
+    </div>
     <footer>
         <ul class="apropos">
             <h4>A propos</h4></br>
@@ -262,6 +262,7 @@
         </ul>
 
     </footer>
+    
 </body>
 
 </html>
