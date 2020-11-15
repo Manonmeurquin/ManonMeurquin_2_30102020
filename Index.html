@@ -25,10 +25,10 @@
         <h2 class="trouvez">Trouvez votre hébergement pour des vacances de rêve</h2>
         <p class="text">En plein centre ville ou en pleine nature</p>
         
-        <div class="formrecherche">
-        <i class="fas fa-map-marker-alt"></i>
+        <div>
         <form method="POST">
-            <p>
+            <p class="formrecherche">
+                <i class="fas fa-map-marker-alt"></i>
                 <input class= "formulaire" type="text" value="Marseille, France" style="height: 30px;"/>
                 <input class="bouton" type="submit" value="Rechercher"/>
                 <button class="boutonmobil"><i class="fas fa-search"></i></button><!-- îcone loupe, apparaît uniquement en version mobile -->
@@ -39,8 +39,8 @@
         <div class="filtres">
         <p>
             <strong class="motfiltre">Filtres</strong>
-            <div class="boutonfiltres"><span><i class="fas fa-money-bill-wave"></i>   Économique</span></div>
-            <div class="boutonfiltres"><span><i class="fas fa-child"></i>   Familial</span></div>
+            <div class="eco_familial"><div class="boutonfiltres"><span><i class="fas fa-money-bill-wave"></i>   Économique</span></div>
+            <div class="boutonfiltres"><span><i class="fas fa-child"></i>   Familial</span></div></div>
             <div class="boutonfiltres"><span><i class="fas fa-heart"></i>   Romantique</span></div>
             <div class="boutonfiltres"><span><i class="fas fa-dog"></i>   Animaux autorisés</span></div>  <br />
         </p>
@@ -50,7 +50,7 @@
     </section>
 
     <section class="hebergements_populaires">
-        
+
         <aside class="hebergements">
             <h2 id="ancre_hebergements">Hébergements à Marseille</h2>
        
@@ -205,8 +205,9 @@
             </a>
         </aside>
     </section>
-            <h2 id="ancre_activites">Activités à Marseille</h2>
         <aside class="activites">
+            <h2 id="ancre_activites">Activités à Marseille</h2>
+
             <a class="vieuxport" href="vieuxport.html">
                 <img class="imgport" src="css/Images/activites/redim/vieux_port_redim.jpg" alt="vieux port"><br /> 
                 <p class="text_activite">Vieux Port</p>

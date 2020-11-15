@@ -56,11 +56,22 @@ header{
 
 /*Section 1*/
 
-.formrecherche, .filtres{
+.formrecherche{
    display: flex;
    flex-wrap: wrap;
    align-items: center;
    margin-bottom: 1em;
+}
+
+.filtres{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 1em;
+}
+.filtre_eco{
+    display: flex;
+    align-items: center;
 }
 
 .text{
@@ -476,6 +487,7 @@ footer{
 
 .h4{
     font-family: 'Raleway-SemiBold';
+    font-weight: bold;
 }
 
 /* Media Queries*/
@@ -485,6 +497,7 @@ footer{
     .bodymargin{
         margin: 0;
     }
+
     header{
         padding-top: 0;
         flex-direction: column;
@@ -492,13 +505,13 @@ footer{
 
     .logo{
         width: 7em;
-    
     }
+
     .sinscrire{
         position: absolute;
         top: 0;
         right: 1em;
-    }
+    }    
 
     .trouvez{
         font-size: 1.5em;
@@ -509,11 +522,18 @@ footer{
         justify-content: space-around;
         padding: 0;
     }
+
+    .formrecherche{
+        justify-content: center;
+        margin: 0;
+    }
+
     .bouton{
         display: none;
     }
     
     .boutonmobil{
+        display: inline;
         border-radius: 10px;
         background-color: #0065fc;
         color: white;
@@ -522,6 +542,7 @@ footer{
         height: 34px;
         margin-left: none;
     }
+
     .lien{
         color: black;
         border-bottom: 2px solid #F2F2F2 ;
@@ -530,19 +551,108 @@ footer{
         text-align: center;
         padding-bottom: 0.5em;
     }
+
     .lien:hover{
         color: #0065fc;
         border-bottom: 2px solid #0065fc;
         border-top: none;
     }
 
-    .boutonmobil{
-        display: inline;
-        border-radius: 10px;
-        background-color: #0065fc;
-        color: white;
-        padding: 8px;
-        border: none;
-        margin-left: none;
+    .filtres{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
     }
+
+    .motfiltre{
+        margin-right: 4em;
+    }
+
+    span{
+        font-size: 1em;
+    }
+
+    .eco_familial{
+        display: flex;
+    }
+
+    .boutonfiltres{
+        margin: 0.5em 1em;
+        margin-left: 0;
+    }
+
+    .hebergements_populaires{
+        flex-direction: column-reverse;
+    }
+
+    .titrepopulaire{
+        padding: 0;
+        margin-right: 3em;
+    }
+
+    .boxpopulaire{
+        margin-bottom: 1em;
+    }
+
+    .populaires{
+        justify-content: space-around;
+        padding-bottom: 0;
+    }
+
+    .hebergements{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        background-color: white;
+    }
+
+    .premiereligne, .deuxiemeligne{
+        justify-content: center;
+    }
+    
+    .afficher{
+        margin: 2em 0;
+    }
+
+    .boxhebergement{
+        margin: 0.5em 0;
+        width: 100%;
+        border: 1px #f8f5f5 solid;
+    }
+
+    .texthebergement{
+        height: auto;
+    }
+
+    .imghebergement{
+        width: 100%;
+    }
+
+    .activites{
+        justify-content: center;
+        align-items: center;
+        padding: 0 1em;
+        margin: 0;
+    }
+
+    #ancre_activites{
+        width: 100%;
+        font-weight: bold;
+    }
+
+    .vieuxport, .fort, .iles, .calanques, .notredame, .longchamp{
+        height: auto;
+        width: auto;
+        margin: 0.8em 0;
+    }
+
+    .imgport, .imgfort, .imgiles, .imgcalanques, .imgnotredame, .imglongchamp{
+        width: 20em;
+        height: 8em;
+    }
+
+    .apropos{
+        padding-right: 5em;
+    }
+
 }
