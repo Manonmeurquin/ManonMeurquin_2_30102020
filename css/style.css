@@ -126,11 +126,11 @@ header{
     background-color: #F2F2F2;  
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    width: 15px;
-    height: 15px;
-    padding: 0.8em;
-    padding-top: 0.50em;
-    padding-bottom: 0.65em;
+    height: 1.3em;
+    width: 1.3em;
+    padding-left: 0.8em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 
 }
 
@@ -157,6 +157,7 @@ header{
 .formulaire{
     border: 1px solid #F2F2F2;
     margin-right: none;
+    height: 2.4em;
 }
 
 .fa-money-bill-wave, .fa-dog, .fa-heart{
@@ -267,10 +268,10 @@ i{
     justify-content: space-around;
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding: 0 1em;
-    padding-bottom: 3em;
-
+    padding: 0 0.5em;
+    padding-bottom: 1em;
 }
+
 .fa-chart-line{
     font-size: 1.5em;
 }
@@ -293,7 +294,15 @@ i{
     box-shadow: 6px 6px 6px #dfdcdc;
     border-radius: 20px;
     padding:4px;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
     
+}
+
+.contenu_populaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .titreboxpop{
@@ -353,8 +362,6 @@ i{
     box-shadow: 6px 6px 6px #F2F2F2;
     width: 17em;
     height: 25em;
-
-
 }
 
 .imgfort{
@@ -438,6 +445,36 @@ i{
     justify-content: space-between;
 }
 /* Général */
+
+.hebergement-img-1{
+    background-image: url(images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+}
+
+.hebergement-img-2{
+    background-image: url(images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
+}
+
+.hebergement-img-3{
+    background-image: url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+}
+
+.hebergement-img-4{
+    background-image: url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+}
+
+.hebergement-img-5{
+    background-image: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+}
+
+.hebergement-img-6{
+    background-image: url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+}
+
+.img{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 .cannebiere:hover, .hotelmouettes:hover, .vieuxport:hover, .fort:hover, .iles:hover, .calanques:hover, .notredame:hover, .longchamp:hover, .hotelamina:hover, .soleil:hover, .bleublanc:hover, .coeur:hover, .hotelport:hover, .panier:hover, .hotelmer:hover {
     box-shadow: 6px 6px 6px #7c7b7b;
@@ -533,6 +570,21 @@ footer{
 
     .formulaire{
         flex: 1;
+        height: 3.75em;
+        border-radius: 15px;
+        border-left: none;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    
+    }
+
+    .fa-map-marker-alt{
+
+        height: 1.88em;
+        width: 2em;
+        padding-left: 1.3em;
+        padding-top: 1em;
+        padding-bottom: 0.5em;
     }
 
     .bouton{
@@ -541,13 +593,18 @@ footer{
     
     .boutonmobil{
         display: inline;
-        border-radius: 10px;
+        border-radius: 15px;
         background-color: #0065fc;
         color: white;
         padding: 8px;
         border: none;
-        height: 34px;
-        margin-left: -1em;
+        height: 4em;
+        width: 4em;
+        margin-left: -3.1em;
+    }
+
+    .fa-search{
+        font-size: 1.5em
     }
 
     .lien{
@@ -670,7 +727,7 @@ footer{
     }
 
     .hebergements_populaires{
-        flex-direction: column-reverse;
+        flex-wrap: wrap-reverse;
     }
 
     .populaires{
