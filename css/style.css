@@ -557,6 +557,8 @@ footer{
 
 /* Media Queries*/
 
+/* MOBILE */
+
 @media all and (max-width: 600px) 
 {
     .bodymargin{
@@ -751,6 +753,8 @@ footer{
 
 }
 
+/* TABLETTE */
+
 @media all and (min-width: 601px) and (max-width: 1024px) 
 {
     .filtres{
@@ -824,75 +828,12 @@ footer{
     }
 }
 
+/* GRAND ECRAN */
 
-@media all and (min-width: 1025px) and (max-width: 1900px)
-{
-    .premiereligne, .deuxiemeligne{
-        justify-content: center;
-    }
-
-    .hebergements{
-        margin-bottom: 1em;
-        align-items: center;
-    }
-
-    .populaires{
-        align-items: center;
-    }
-
-    .boxpopulaire{
-        margin: 0 0.5em;
-    }
-
-    .contenu-populaire{
-        flex-direction: row;
-    }
-    
-    .hebergements-populaires{
-        justify-content: center;
-    }
-
-    #ancre-activites{
-        text-align: center;
-    }
-
-    .activites{
-        width: 100%;
-    }
-
-    .filtres{
-        flex-wrap: wrap;
-    }
-
-    footer{
-        text-align: center;
-    }
-
-    ul{
-        padding: 0;
-    }
-
-    .vieuxport, .fort, .iles, .calanques, .notredame, .longchamp{
-        flex-wrap: wrap;
-        width: 100%;
-        height: 100%;
-        margin-bottom: 1em;
-    }
-
-    .imgport, .imgfort, .imgiles, .imgcalanques, .imgnotredame, .imglongchamp{
-        width: 100%;
-        height: 10em;
-    }
-
-    .boxactivites{
-        width: 100%;
-    }
-}
-
-@media all and (min-width: 1901px) and (max-width: 3000px)
+@media all and (min-width: 1900px) and (max-width: 3000px)
 {
     .bodymargin{
-        margin: 20%;
+        margin: 10%;
     }
 
     .hebergements-populaires{
