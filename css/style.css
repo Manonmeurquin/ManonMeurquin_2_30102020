@@ -544,15 +544,26 @@ footer{
     justify-content: flex-start;
     font-family: 'Raleway-Regular';
     padding-bottom: 2em;
+    height: 12em;
 }
 
 .apropos, .noshebergements{
     padding-right: 12em;
 }
 
-.h4{
+.title-footer{
     font-family: 'Raleway-SemiBold';
     font-weight: bold;
+    font-size: 1.1em;
+}
+
+.apropos, .noshebergements, .assistance{
+    display: flex;
+    flex-direction: column;
+}
+
+li{
+    margin-bottom: 1em;
 }
 
 /* Media Queries*/
@@ -830,7 +841,7 @@ footer{
 
 /* GRAND ECRAN */
 
-@media all and (min-width: 1900px) and (max-width: 3000px)
+@media all and (min-width: 3000px) and (max-width: 4000px)
 {
     .bodymargin{
         margin: 10%;
