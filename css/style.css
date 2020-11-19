@@ -840,8 +840,8 @@ li{
 
 /* GRAND ECRAN */
 
-/*
-@media all and (min-width: 3000px) and (max-width: 4000px)
+
+@media all and (min-width: 1617px) and (max-width: 4000px)
 {
     .bodymargin{
         margin: 10%;
@@ -871,4 +871,3 @@ li{
         justify-content: center;
     }
 }
-*/
