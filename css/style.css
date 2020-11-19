@@ -765,7 +765,7 @@ li{
 
 /* TABLETTE */
 
-@media all and (min-width: 601px) and (max-width: 1024px) 
+@media all and (min-width: 601px) and (max-width: 1344px) 
 {
     .filtres{
         flex-wrap: wrap;
