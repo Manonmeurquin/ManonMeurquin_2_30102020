@@ -808,27 +808,7 @@ li{
     .imghebergement{
         width: 100%;
     }
-
-    .vieuxport, .fort, .iles, .calanques, .notredame, .longchamp{
-        flex-wrap: wrap;
-        width: 100%;
-        height: 100%;
-        margin-bottom: 1em;
-    }
-
-    .imgport, .imgfort, .imgiles, .imgcalanques, .imgnotredame, .imglongchamp{
-        width: 100%;
-        height: 10em;
-    }
-
-    .boxactivites{
-        width: 100%;
-    }
-
-    .activites{
-        margin-bottom: 0;
-    }
-
+    
     .star{
         margin: 0;
     }
