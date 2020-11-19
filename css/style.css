@@ -153,6 +153,7 @@ header{
     border: 1px solid #F2F2F2;
     margin-right: none;
     height: 2.4em;
+    text-decoration: #c7c6c6;
 }
 
 .fa-money-bill-wave, .fa-dog, .fa-heart{
@@ -808,7 +809,7 @@ li{
     .imghebergement{
         width: 100%;
     }
-    
+
     .star{
         margin: 0;
     }

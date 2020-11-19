@@ -26,16 +26,16 @@
         <p class="text">En plein centre ville ou en pleine nature</p>
         
         <div>
-        <form method="POST">
+        <form method="POST" action="traitement.php">
             <p class="formrecherche">
                 <i class="fas fa-map-marker-alt"></i>
-                <input class= "formulaire" type="text" value="Marseille, France" />
+                <input class= "formulaire" type="text" name="formulaire" placeholder="Marseille, France" />
                 <input class="bouton" type="submit" value="Rechercher"/>
                 <button class="boutonmobil"><i class="fas fa-search"></i></button><!-- îcone loupe, apparaît uniquement en version mobile -->
-        
             </p>
         </form>
         </div>
+
         <div class="filtres">
         
             <p><strong class="motfiltre">Filtres</strong>
