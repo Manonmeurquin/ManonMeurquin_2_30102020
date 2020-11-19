@@ -391,11 +391,11 @@ i{
 }
 
 .activite-img-2{
-    background-image: url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+    background-image: url(images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
 }
 
 .activite-img-3{
-    background-image: url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+    background-image: url(images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
 }
 
 .activite-img-4{
@@ -844,7 +844,15 @@ li{
 @media all and (min-width: 1617px) and (max-width: 4000px)
 {
     .bodymargin{
-        margin: 10%;
+        margin: 0 10%;
+    }
+
+    header{
+        margin: 0 20%;
+    }
+
+    nav{
+        margin: 0 20%;
     }
 
     .hebergements-populaires{
