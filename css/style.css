@@ -544,7 +544,6 @@ footer{
     justify-content: flex-start;
     font-family: 'Raleway-Regular';
     padding-bottom: 2em;
-    height: 12em;
 }
 
 .apropos, .noshebergements{
@@ -555,6 +554,7 @@ footer{
     font-family: 'Raleway-SemiBold';
     font-weight: bold;
     font-size: 1.1em;
+    margin-top: 1em;
 }
 
 .apropos, .noshebergements, .assistance{
