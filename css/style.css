@@ -761,7 +761,6 @@ li{
     .apropos, .noshebergements{
         padding-right: 1em;
     }
-
 }
 
 /* TABLETTE */
@@ -841,6 +840,7 @@ li{
 
 /* GRAND ECRAN */
 
+/*
 @media all and (min-width: 3000px) and (max-width: 4000px)
 {
     .bodymargin{
@@ -871,3 +871,4 @@ li{
         justify-content: center;
     }
 }
+*/
