@@ -102,6 +102,9 @@ header{
     margin-left: 1em;
     justify-content: center;
     align-items: center;
+    border: 1px solid #F2F2F2;
+    border-radius: 2em;
+    background-color: white;
 }
 
 .eco-familial{
@@ -821,8 +824,17 @@ li{
 
 /* GRAND ECRAN */
 
+@media all and (min-width: 940px) and (max-width: 1200px)
+{
+    .vieuxport, .fort, .iles, .calanques, .notredame, .longchamp{
+        width: 14em;
+    }
+    .activite-img-1, .activite-img-2, .activite-img-3, .activite-img-4, .activite-img-5, .activite-img-6{
+        width: 100%;
+    }
+}
 
-@media all and (min-width: 1617px) and (max-width: 4000px)
+@media all and (min-width: 1617px)
 {
     .bodymargin{
         margin: 0 10%;
