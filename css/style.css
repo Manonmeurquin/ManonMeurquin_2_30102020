@@ -57,7 +57,6 @@ header{
 
 .formrecherche{
    display: flex;
-   flex-wrap: wrap;
    align-items: center;
    margin-bottom: 1em;
 }
@@ -103,8 +102,13 @@ header{
     justify-content: center;
     align-items: center;
     border: 1px solid #F2F2F2;
+    border-left: none;
     border-radius: 2em;
     background-color: white;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 1em;
 }
 
 .eco-familial{
@@ -140,7 +144,7 @@ header{
     padding: 8px;
     border: none;
     height: 34px;
-    margin-left: none;
+    margin-left: 0;
 }
 
 .bouton:hover{
@@ -154,7 +158,7 @@ header{
 
 .formulaire{
     border: 1px solid #F2F2F2;
-    margin-right: none;
+    margin-right: 0;
     height: 2.4em;
     text-decoration: #c7c6c6;
 }
@@ -203,7 +207,6 @@ i{
     flex-wrap: wrap;
     flex-direction: column;
     padding: 0 1em;
-    align-items: space-around;
     background-color: #F2F2F2;
     border-radius: 20px;
 }
@@ -574,7 +577,7 @@ li{
 
 /* MOBILE */
 
-@media all and (max-width: 600px) 
+@media all and (max-width: 655px) 
 {
     .bodymargin{
         margin: 0;
@@ -765,11 +768,15 @@ li{
     .apropos, .noshebergements{
         padding-right: 1em;
     }
+
+    footer{
+        flex-direction: column;
+    }
 }
 
 /* TABLETTE */
 
-@media all and (min-width: 601px) and (max-width: 1344px) 
+@media all and (min-width: 656px) and (max-width: 1344px) 
 {
     .filtres{
         flex-wrap: wrap;
@@ -817,37 +824,32 @@ li{
         margin: 0;
     }
 
-    footer{
-        height: 100%;
+    .vieuxport, .fort, .iles, .calanques, .notredame, .longchamp{
+    margin-bottom: 1em;
+    justify-content: center;
     }
 }
 
 /* GRAND ECRAN */
 
-@media all and (min-width: 940px) and (max-width: 1200px)
+@media all and (min-width: 940px) and (max-width: 1231px)
 {
     .vieuxport, .fort, .iles, .calanques, .notredame, .longchamp{
-        width: 14em;
+        width: 13em;
+        padding-bottom: 1em;
     }
+
     .activite-img-1, .activite-img-2, .activite-img-3, .activite-img-4, .activite-img-5, .activite-img-6{
         width: 100%;
+    }
+
+    footer{
+        flex-direction: row;
     }
 }
 
 @media all and (min-width: 1617px)
 {
-    .bodymargin{
-        margin: 0 10%;
-    }
-
-    header{
-        margin: 0 20%;
-    }
-
-    nav{
-        margin: 0 20%;
-    }
-
     .hebergements-populaires{
         justify-content: center;
     }
