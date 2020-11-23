@@ -2,14 +2,13 @@
 @font-face {
     font-family: "Raleway-Regular";
     src: url(fonts/Raleway/Raleway-Regular.ttf);
-    src: url('Fonts/Raleway/Raleway-Regular.ttf') format("ttf"),
    }
 
 @font-face{
     font-family: "Raleway-SemiBold";
     src: url(fonts/Raleway/Raleway-SemiBold.ttf);
-    src: url('fonts/Raleway/Raleway-SemiBold.ttf') format("ttf"),
 }
+
 .bodymargin{
     margin: 0 2em;
 }
@@ -166,9 +165,8 @@ header{
 .fa-money-bill-wave, .fa-dog, .fa-heart{
     color: #0065fc;
     border-radius: 50%;
-    border: 1px solid #deebff;
     background-color: #deebff;
-    padding: 10px;
+    padding: 1em;
     text-align: center;
     margin-right: 0.5em;
     
@@ -177,11 +175,10 @@ header{
     text-align: center;
     color: #0065fc;
     border-radius: 50%;
-    border: 1px solid #deebff;
     background-color: #deebff;
-    padding: 10px;
-    padding-right: 12px;
-    padding-left: 12px;
+    padding: 1em;
+    padding-right: 1.2em;
+    padding-left: 1.2em;
     margin-right: 0.5em;
 }
 
@@ -611,6 +608,11 @@ li{
     .formrecherche{
         justify-content: center;
         margin: 2em 0.5em;
+    }
+
+    .fa-search:hover{
+        box-shadow: 4px 4px 4px #a5a4a4;
+        cursor: pointer;
     }
 
     .formulaire{
